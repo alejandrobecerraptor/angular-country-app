@@ -8,7 +8,7 @@ _Aplicacion desarrollada en Angular, para repasar algunos conceptos basicos de a
 ## Demo 🎮
 _Despleegado con gihub pages, y despliegue automatico con scripts (npm run build:github)_
 
-Este es el Demo de la aplicacion, **Update[ 09/11/2024 ]** [Click Aquí](https://alejandrobecerraptor.github.io/angular-country-app/)
+Este es el Demo de la aplicacion, **Update[ 12/11/2024 ]** [Click Aquí](https://alejandrobecerraptor.github.io/angular-country-app/)
 
 
 ## Importante ℹ
