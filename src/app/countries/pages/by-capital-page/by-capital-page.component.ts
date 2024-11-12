@@ -5,16 +5,19 @@ import { Country } from '../../interfaces/country';
 @Component({
   selector: 'app-by-capital-page',
   templateUrl: './by-capital-page.component.html',
-  styleUrl: './by-capital-page.component.css'
+  styleUrl: './by-capital-page.component.css',
 })
 export class ByCapitalPageComponent {
-
   countries: Country[] = [];
+  isLoading: boolean = false;
 
   constructor(private countriesService: CountriesService) {}
 
   searchByCapital(value: string): void {
-    this.countriesService.searchCapital(value)
-      .subscribe(countries => this.countries = countries);
+    this.isLoading = true;
+    this.countriesService.searchCapital(value).subscribe((countries) => {
+      this.countries = countries;
+      this.isLoading = false;
+    });
   }
 }
